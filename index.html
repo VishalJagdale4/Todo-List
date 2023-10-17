@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>To-do</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" href="images/icon.png" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Todo List</h1>
+      <input type="text" id="task" placeholder="Create new task" />
+      <button id="add">Add</button>
+
+      <hr />
+
+      <button id="tasks" class="expandables">&#9654; Tasks</button>
+
+      <div id="tasksPanel" class="hide">
+        <div class="box">
+          <div id="no_task_item"></div>
+          <ul id="taskList"></ul>
+        </div>
+      </div>
+      <button id="complete" class="expandables">&#9654; Completed</button>
+
+      <div id="completedTasksPanel" class="hide">
+        <div class="box">
+          <div id="no_completed_item"></div>
+
+          <ul id="completedTaskList"></ul>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

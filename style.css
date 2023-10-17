@@ -1,0 +1,168 @@
+body {
+  background-image: url("images/background-image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  width: 400px;
+  margin: 10px;
+  padding: 0;
+  position: absolute;
+  right: 1px;
+  text-align: center;
+}
+
+h1,
+h4 {
+  color: #333;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#add {
+  padding: 7px 15px;
+  background-color: #34db34;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border: 1px solid green;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+#add:hover {
+  background-color: white;
+  color: #34db34;
+  border: 1px solid #34db34;
+}
+
+.checkbox {
+  appearance: none;
+  margin-right: 20px;
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  text-align: center;
+  font-weight: bold;
+  color: grey;
+  border-radius: 3px;
+  flex: 0 0 auto;
+}
+
+.checkbox:checked {
+  background-color: #0e9700;
+}
+
+.checkbox:hover {
+  cursor: pointer;
+  background-color: greenyellow;
+  color: white;
+}
+
+.checkbox:before {
+  content: "✔";
+}
+.checkbox:checked:before {
+  color: white;
+  content: "✔";
+}
+
+.checkbox:checked:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.task-text {
+  margin: 10px 0;
+  width: 350px;
+  height: auto;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+}
+
+#task {
+  width: 300px;
+  padding: 7px;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.cross {
+  color: black;
+  width: 20px;
+  height: 25px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: initial;
+  flex: 0 0 auto;
+}
+.cross:hover {
+  color: white;
+  background-color: black;
+  width: 20px;
+  height: 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: initial;
+}
+
+.box {
+  height: auto;
+  width: auto;
+  border-radius: 5px;
+  margin: 20px;
+}
+
+.expandables {
+  width: 400px;
+  border: none;
+  border-radius: 10px;
+  background-color: #fff;
+  color: black;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1px;
+}
+
+.expandables:hover {
+  background-color: #eee;
+}
+
+.expandables:active {
+  background-color: #ddd;
+}
+
+.hide {
+  display: none;
+}
+
+#no_task_item,
+#no_completed_item {
+  font-size: 12px;
+  font-weight: bold;
+  color: #aaa;
+}
