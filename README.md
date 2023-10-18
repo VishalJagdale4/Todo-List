@@ -10,3 +10,6 @@ When you create a new task, it's automatically added to the "Tasks" list. Each t
 In the "Completed" list, the task format is similar to the "Tasks" list, including a checkbox, task text with a line-through style (since the tasks are already completed), and a button. Here, the checkbox is initially checked, reflecting the completed status. If you want to mark a task as incomplete, you can simply click on it, and it will be moved back to the "Tasks" list, with the task text returning to its normal appearance and the checkbox unmarked. You can also remove tasks from the "Completed" list using the provided remove button.
 
 This HTML, CSS, and JavaScript-based project offers an intuitive and user-friendly way to manage your tasks. To experience it firsthand, you can access the live demo by following this link: [Todo List Demo](https://vishaljagdale4.github.io/Todo-List/). Enjoy a seamless and visually pleasing task management experience!
+
+
+![Screenshot](https://github.com/VishalJagdale4/Todo-List/assets/85816586/4fd0490b-b489-467d-a82b-1c49110c7214)
