@@ -33,6 +33,16 @@ addTaskButton.addEventListener("click", () => {
 
     taskList.appendChild(taskItem);
     hasTasks(taskList, emptyTaskList);
+
+    //blink when task added
+    if (taskText !== "") {
+      const buttonToBlink = document.getElementById("tasks");
+      buttonToBlink.style.backgroundColor = "greenyellow";
+      setTimeout(function () {
+        buttonToBlink.style.backgroundColor = "white";
+      }, 500);
+    }
+
     taskInput.value = "";
 
     //remove button
@@ -56,6 +66,13 @@ addTaskButton.addEventListener("click", () => {
         completedTaskList.appendChild(taskList.removeChild(taskItem));
         hasTasks(taskList, emptyTaskList);
         hasTasks(completedTaskList, emptyCompletedList);
+
+        //blink when task completes.
+        const buttonToBlink = document.getElementById("complete");
+        buttonToBlink.style.backgroundColor = "greenyellow";
+        setTimeout(function () {
+          buttonToBlink.style.backgroundColor = "white";
+        }, 500);
       }
     });
 
@@ -66,6 +83,13 @@ addTaskButton.addEventListener("click", () => {
         taskList.appendChild(completedTaskList.removeChild(taskItem));
         hasTasks(completedTaskList, emptyCompletedList);
         hasTasks(taskList, emptyTaskList);
+
+        //blink when task completes.
+        const buttonToBlink = document.getElementById("tasks");
+        buttonToBlink.style.backgroundColor = "rgb(252, 87, 104)";
+        setTimeout(function () {
+          buttonToBlink.style.backgroundColor = "white";
+        }, 500);
       }
     });
   }
